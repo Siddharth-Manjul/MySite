@@ -1,0 +1,151 @@
+:root {
+  --spacing: 0.1rem;
+  --transition: all 0.3s linear;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "EB Garamond", serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* Navbar */
+
+.main-name {
+  color: #F47C7C;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
+
+.nav-header {
+  background-color: #FAD4D4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #354259;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  color: #694e4e;
+  transform: rotate(90deg);
+}
+
+.logo {
+  border-radius: 50%;
+  height: 2.5rem;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.links a {
+  color: #072227;
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: var(--spacing);
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+
+.links a:hover {
+  color: #c0d8c0;
+  background: #694e4e;
+  padding-left: 1.5rem;
+}
+
+.show-links {
+  height: 17rem;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    height: 5.5rem;
+    background-color: #FAD4D4;
+  }
+
+  .main-name {
+    font-size: 3rem;
+    padding-left: 5rem;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    height: auto;
+  }
+
+  .links a {
+    color: #F47C7C;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .links a:hover {
+    color: #694e4e;
+    background: transparent;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-top: 0.2rem;
+  }
+
+  .links-div {
+    position: absolute;
+    right: 4rem;
+  }
+
+}
