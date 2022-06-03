@@ -35,13 +35,13 @@ ul {
 /* Navbar */
 
 .main-name {
-  color: #F47C7C;
-  font-family: 'Josefin Sans', sans-serif;
+  color: #f47c7c;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
 }
 
 .nav-header {
-  background-color: #FAD4D4;
+  background-color: #fad4d4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,13 +92,13 @@ ul {
 }
 
 .show-links {
-  height: 17rem;
+  height: 10.02rem;
 }
 
 @media screen and (min-width: 800px) {
   nav {
     height: 5.5rem;
-    background-color: #FAD4D4;
+    background-color: #fad4d4;
   }
 
   .main-name {
@@ -129,7 +129,7 @@ ul {
   }
 
   .links a {
-    color: #F47C7C;
+    color: #f47c7c;
     font-size: 2rem;
     margin-left: 1rem;
     margin: 0 0 0.5rem;
@@ -147,12 +147,75 @@ ul {
     position: absolute;
     right: 4rem;
   }
-
 }
 
-
 .hr-1 {
-    background-color: #F47C7C;
-    border: 1px solid #F47C7C;
-    height: 0.5rem;
+  background-color: #f47c7c;
+  border: 1px solid #f47c7c;
+  height: 0.5rem;
+}
+
+/* Intro */
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro .underline {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+.intro-img {
+  display: none;
+}
+
+.intro {
+  background: #FAD4D4;
+}
+
+.intro-center {
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+
+.intro-info h1 {
+  color: #354259;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.intro-info h3 {
+  color: #354259;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+}
+
+.intro-btn {
+  background-color: #f47c7c;
+  color: #354259;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  margin-top: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.intro-btn:hover {
+  background-color: #694e4e;
+  color: #c0d8c0;
 }
