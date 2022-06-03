@@ -149,3 +149,10 @@ ul {
   }
 
 }
+
+
+.hr-1 {
+    background-color: #F47C7C;
+    border: 1px solid #F47C7C;
+    height: 0.5rem;
+}
