@@ -38,6 +38,7 @@ ul {
   color: #f47c7c;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
+  padding-top: 1rem;
 }
 
 .nav-header {
@@ -77,7 +78,7 @@ ul {
   color: #072227;
   display: block;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: var(--spacing);
   padding: 0.5rem 1rem;
@@ -92,7 +93,8 @@ ul {
 }
 
 .show-links {
-  height: 10.02rem;
+  background-color: #EF9F9F;
+  height: 11.02rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -104,6 +106,8 @@ ul {
   .main-name {
     font-size: 3rem;
     padding-left: 5rem;
+    padding-top: 0;
+    text-transform: upppercase;
   }
 
   .nav-center {
@@ -218,4 +222,49 @@ ul {
 .intro-btn:hover {
   background-color: #694e4e;
   color: #c0d8c0;
+}
+
+@media screen and (min-width: 992px) {
+
+  .intro-img {
+    display: block;
+    position: relative;
+    margin-left: 3rem;
+  }
+
+  .intro-info {
+    margin-left: 6rem;
+  }
+
+  .intro-info h1 {
+    font-size: 4rem;
+  }
+
+  .intro-info h3 {
+    font-size: 2rem;
+  }
+
+  .intro-center {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro-img::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid #f47c7c;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .intro-photo {
+    max-width: 25rem;
+    max-height: 30rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    position: relative;
+  }
 }
