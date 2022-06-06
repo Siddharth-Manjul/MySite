@@ -107,6 +107,7 @@ p {
 }
 /* section */
 .section {
+  font-family: 'Josefin Sans', sans-serif;
   padding: 5rem 0;
 }
 
@@ -306,6 +307,7 @@ p {
 }
 
 .intro-info h1 {
+  font-family: 'Josefin Sans', sans-serif;
   color: #354259;
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -425,5 +427,69 @@ p {
 
   about-info {
     align-self: center;
+  }
+}
+
+/* Services */
+
+.service {
+  background: white;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.service h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.service p{
+  font-family: 'Raleway', sans-serif;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.service:hover {
+  background: #f47c7c;
+  transition: var(--transition);
+}
+
+.service:hover p {
+  color: white;
+}
+
+.service:hover .underline {
+  background: black;
+}
+
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
